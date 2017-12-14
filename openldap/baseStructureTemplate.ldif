@@ -1,0 +1,55 @@
+dn: $BASEDN
+objectClass: dcObject
+objectClass: organization
+dc: myproject
+o: myproject
+
+
+dn: ou=Technical,$BASEDN
+objectClass: top
+objectClass: organizationalUnit
+ou: Technical
+
+dn: uid=ldapbind,ou=Technical,$BASEDN
+objectClass: posixAccount
+objectClass: top
+objectClass: inetOrgPerson
+gidNumber: 0s
+givenName: bind
+sn: ldap
+displayName: ldap bind
+uid: ldapbind
+homeDirectory: -
+cn: ldap bind
+uidNumber: 26088
+userPassword: $ENCPASSWD
+
+dn: ou=Normal,$BASEDN
+objectClass: top
+objectClass: organizationalUnit
+ou: Normal
+
+dn: ou=Groups, ou=Normal,$BASEDN
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+
+dn: ou=Users,ou=Normal,$BASEDN
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: uid=admin,ou=Users,ou=Normal,$BASEDN
+objectClass: posixAccount
+objectClass: top
+objectClass: inetOrgPerson
+gidNumber: 0
+givenName: admin
+sn: admin
+displayName: admin
+uid: admin
+homeDirectory: -
+cn: admin
+uidNumber: 1
+userPassword: $ENCPASSWD
+

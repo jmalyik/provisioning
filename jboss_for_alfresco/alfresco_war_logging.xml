@@ -1,0 +1,672 @@
+	<logging-profiles>
+		<logging-profile name="alfresco">
+			<root-logger>
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</root-logger>
+			<logger category="org.hibernate">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.hibernate.util.JDBCExceptionReporter">
+				<level name="FATAL"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.hibernate.event.def.AbstractFlushingEventListener">
+				<level name="FATAL"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.hibernate.type">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.hibernate.cfg.SettingsFactory">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.springframework">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.springframework.remoting.support">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.springframework.util">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.axis">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.ws">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.cxf">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.myfaces.util.DebugUtils">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.myfaces.el.VariableResolverImpl">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.myfaces.application.jsp.JspViewHandlerImpl">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.myfaces.taglib">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="net.sf.jooreports.openoffice.connection">
+				<level name="FATAL"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.hibernate.ps.PreparedStatementCache">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.admin">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.cache.TransactionalCache">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.model.filefolder">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.tenant">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.avm">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.config">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.config.JndiObjectFactoryBean">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.config.JBossEnabledWebApplicationContext">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.management.subsystems">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.management.subsystems.ChildApplicationContextFactory">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.management.subsystems.ChildApplicationContextFactory$ChildApplicationContext">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.security.sync">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.security.person">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.sample">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.web">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.webservice">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.service.descriptor.DescriptorService">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.importer.ImporterBootstrap">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.web.ui.common.Utils">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.admin.patch.PatchExecuter">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.domain.patch.ibatis.PatchDAOImpl">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.admin.patch.impl.DeploymentMigrationPatch">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.version.VersionMigrator">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.admin.patch.impl.ResetWCMToGroupBasedPermissionsPatch">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.module.ModuleServiceImpl">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.domain.schema.SchemaBootstrap">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.admin.ConfigurationChecker">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.node.index.AbstractReindexComponent">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.node.index.IndexTransactionTracker">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.node.index.FullIndexRecoveryComponent">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.node.index.AVMFullIndexRecoveryComponent">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.util.OpenOfficeConnectionTester">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.node.db.hibernate.HibernateNodeDaoServiceImpl">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.domain.hibernate.DirtySessionMethodInterceptor">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.transaction.RetryingTransactionHelper">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.util.transaction.SpringAwareUserTransaction.trace">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.util.AbstractTriggerBean">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.enterprise.repo.cluster">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.version.Version2ServiceImpl">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.workflow">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.smb.protocol">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.ftp.protocol">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.webdav.protocol">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.fileserver">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.node.integrity">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.search.Indexer">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.search.impl.lucene.index">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.search.impl.lucene.fts.FullTextSearchIndexerImpl">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.web.forms.xforms.XFormsBean">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.web.forms.XSLTRenderingEngine">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="alfresco.missingProperties">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.web.ui.repo.component.property.UIChildAssociation">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.web.ui.repo.component.property.UIAssociation">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.dictionary">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.dictionary.types.period">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.mbeans.VirtServerRegistry">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.util.RuntimeSystemPropertiesSetter">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.content.ReplicatingContentStore">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.content.replication">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.activities">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.usage">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.module.vti">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.forms">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.web.config.forms">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.web.scripts.forms">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.opencmis">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.opencmis.AlfrescoCmisServiceInterceptor">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.cmis">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.cmis.dictionary">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.chemistry.opencmis">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.imap">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.jbpm.graph.def.GraphElement">
+				<level name="FATAL"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.springframework.extensions.webscripts">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.springframework.extensions.webscripts.ScriptLogger">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.springframework.extensions.webscripts.ScriptDebugger">
+				<level name="OFF"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.web.scripts">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.web.scripts.BaseWebScriptTest">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.web.scripts.AlfrescoRhinoScriptDebugger">
+				<level name="OFF"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.jscript">
+				<level name="ERROR"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.jscript.ScriptLogger">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.cmis.rest.CMISTest">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.avm.actions">
+				<level name="INFO"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.bulkimport">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.content.metadata.AbstractMappingMetadataExtracter">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.pdfbox.pdmodel.font.PDSimpleFont">
+				<level name="FATAL"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.pdfbox.pdmodel.font.PDFont">
+				<level name="FATAL"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.apache.pdfbox.pdmodel.font.PDCIDFont">
+				<level name="FATAL"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.search.impl.noindex.NoIndexIndexer">
+				<level name="FATAL"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.search.impl.noindex.NoIndexSearchService">
+				<level name="FATAL"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<logger category="org.alfresco.repo.search.impl.lucene.index.IndexInfo">
+				<level name="WARN"/>
+				<handlers>
+					<handler name="ALFFILE"/>
+				</handlers>
+			</logger>
+			<periodic-rotating-file-handler name="ALFFILE" autoflush="true">
+				<formatter>
+					<named-formatter name="PATTERN"/>
+				</formatter>
+				<file relative-to="jboss.server.log.dir" path="alfresco.log"/>
+				<suffix value=".yyyy-MM-dd"/>
+				<append value="true"/>
+			</periodic-rotating-file-handler>
+			<formatter name="PATTERN">
+				<pattern-formatter pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c] (%t) %s%e%n"/>
+			</formatter>
+			<formatter name="COLOR-PATTERN">
+				<pattern-formatter pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%c] (%t) %s%e%n"/>
+			</formatter>
+		</logging-profile>
+	</logging-profiles>
